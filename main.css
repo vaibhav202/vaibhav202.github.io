@@ -123,7 +123,7 @@ label.link , a.link {
     align-items: center;
     gap: 0.4em;
     width: 100%; height: 100%; padding: 1em;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--text-color);
     cursor: pointer;
@@ -301,7 +301,7 @@ input:checked#works_window ~ i , input:checked#about_window ~ i {
 @media screen and (max-width: 698px) {
     body {background-image: var(--bg-image-phone);}
     .appbar {justify-content: space-between;}
-    label.link , a.link {font-size: 10px; font-weight: 600;}
+    label.link , a.link {font-size: 14px; font-weight: 600;}
 }
 
 @media screen and (max-width: 438px) { #about {padding: 20px;} }
