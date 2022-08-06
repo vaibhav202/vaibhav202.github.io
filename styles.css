@@ -169,7 +169,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .wrapper, .work-link {
-    padding: 2em;
+    padding: 1em;
   }
   .box {
     padding: 2em 1em;
