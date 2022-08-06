@@ -80,7 +80,7 @@ nav ul {
 nav .logo {
   color: var(--accent-color);
   letter-spacing: -1px;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 800;
 }
 nav #theme-toggler ~ label > span::before {
@@ -99,9 +99,9 @@ nav #theme-toggler:checked ~ label > span::after {
   color: var(--light-color);
 }
 nav .theme-toggle {
-  padding: 0.5em;
+  padding: 0.5em 1em;
   background-color: var(--accent-color);
-  border-radius: 0.5em;
+  border-radius: 5em;
   border: none;
   display: block;
   width: 100%;

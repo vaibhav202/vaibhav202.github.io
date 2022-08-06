@@ -82,7 +82,7 @@ nav{
     .logo{
         color: var(--accent-color);
         letter-spacing: -1px;
-        font-size: 1.5em;
+        font-size: 2em;
         font-weight: 800;
     }
 
@@ -105,9 +105,9 @@ nav{
     } 
 
     .theme-toggle{
-        padding: .5em;
+        padding: .5em 1em; 
         background-color: var(--accent-color);
-        border-radius: .5em;
+        border-radius: 5em;
         border: none;
         display: block;
         width: 100%;
