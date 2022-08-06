@@ -21,6 +21,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -60,7 +61,7 @@ input[type='checkbox']{
 }
 
 nav{
-    padding: 1em 2em; 
+    padding: 2em; 
     background-color: var(--light-color);
     border-radius: 1em;
     outline: var(--border);
@@ -161,7 +162,7 @@ nav{
 }
 
 footer{
-    padding: 1em;
+    padding: 2em;
     color: var(--dark-color);
     background-color: var(--light-color);
     border-radius: 1em;
@@ -171,7 +172,7 @@ footer{
 
 @media screen and (max-width: 768px) {
     .wrapper , .work-link{
-        padding: 1em;
+        padding: 2em;
     }
 
     .box{
