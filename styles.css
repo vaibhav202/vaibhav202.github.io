@@ -71,16 +71,15 @@ nav {
   border-radius: 1em;
   outline: var(--border);
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 nav ul {
+  width: 100%;
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  justify-items: center;
+  justify-content: space-around;
   align-items: center;
 }
 nav .logo {
@@ -92,6 +91,7 @@ nav .logo {
 nav .theme-toggle {
   font-family: Inter, sans-serif;
   font-weight: 500;
+  font-size: 1em;
   padding: 0.5em 1em;
   color: var(--light-color);
   background-color: var(--accent-color);
@@ -100,6 +100,7 @@ nav .theme-toggle {
   display: block;
   width: 100%;
   text-align: center;
+  cursor: pointer;
 }
 
 .boxes {
