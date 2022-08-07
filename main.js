@@ -1,11 +1,12 @@
-var theme_toggler = document.querySelector('#theme-toggler');
-theme_toggler.addEventListener('click', toggle_theme);
+var themeToggler = document.querySelector('.theme-toggle'); 
 
-function toggle_theme(){
-    if(theme_toggler.checked) {
-        document.body.classList.add('dark');
+themeToggler.onclick = function theme_toggler(){
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        document.querySelector('.theme-state').innerHTML = "Switch to light mode";
     }
     else{
-        document.body.classList.remove('dark');
+        document.querySelector('.theme-state').innerHTML = "Switch to dark mode";  
     }
-}
+}    
