@@ -5,45 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@*/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="styles.css">
     <title>Vaibhav</title>
 </head>
-<body>
-    <div class="wrapper">
-        <nav>
-            <ul>
-                <li class="logo">Vaibhav&NonBreakingSpace;Pancholi</li>
-                <li class="theme-switch">
-                    <button class="theme-toggle"><p class="theme-state">Switch to dark mode</p></button>
-                </li>
-            </ul>
-        </nav>
-        <div class="boxes">
-            <div class="box">
-                <h2>About me</h2>
-                <p>I am Vaibhav from Gujarat, India. Currently learning web designing and development.</p>
-                <p>In leisure time I like to create some simple wallpapers for Phone and Desktop.</p>
+<body data-scroll-container>
+    <div class="wrapper" data-scroll-section>
+            <nav>
+                <ul>
+                    <li class="logo">Vaibhav&NonBreakingSpace;Pancholi</li>
+                    <li class="theme-switch">
+                        <button class="theme-toggle"><p class="theme-state">Switch to dark mode</p></button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="boxes">
+                <div class="box">
+                    <h2>About me</h2>
+                    <p>I am Vaibhav from Gujarat, India. Currently learning web designing and development.</p>
+                    <p>In leisure time I like to create some simple wallpapers for Phone and Desktop.</p>
+                </div>
+                
+                <div class="box">
+                    <h2>My works</h2>
+                    <p class="about_work">Right now, there is no any active projects by me. However, you can look at some of my previous projects.</p>
+                    <ul class="works-content">
+                        <li><a class="work-link" target="_blank" href="https://photos.app.goo.gl/fB9uyh2HnNJrM9557"><p class="work_para">Some wallpapers by me. Created in Figma.</p>Check it on Google Photos&NonBreakingSpace;&rightarrow;</a></li>
+                        <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/Material-You"><p class="work_para">Presentation on Material You design system. Created in Figma.</p>Material You&NonBreakingSpace;&rightarrow;</a></li>
+                        <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/rv.co.nz"><p class="work_para">My first project but I am not working on it anymore.</p>rv.co.nz&NonBreakingSpace;&rightarrow;</a></li>
+                    </ul>    
+                </div>
             </div>
-            <div class="box">
-                <h2>My works</h2>
-                <p class="about_work">Right now, there is no any active projects by me. However, you can look at some of my previous projects.</p>
-                <ul class="works-content">
-                    <li><a class="work-link" target="_blank" href="https://photos.app.goo.gl/fB9uyh2HnNJrM9557"><p class="work_para">Some wallpapers by me. Created in Figma.</p>Check it on Google Photos&NonBreakingSpace;&rightarrow;</a></li>
-                    <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/Material-You"><p class="work_para">Presentation on Material You design system. Created in Figma.</p>Material You&NonBreakingSpace;&rightarrow;</a></li>
-                    <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/rv.co.nz"><p class="work_para">My first project but I am not working on it anymore.</p>rv.co.nz&NonBreakingSpace;&rightarrow;</a></li>
-                </ul>    
-            </div>
-        </div>
-        <footer>
-            <p>&copy; 2022 &centerdot; Vaibhav Pancholi</p>
-            <div class="icons">
-                <a href="https://telegram.me/VaibhavO5" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                <a href="https://twitter.com/VaibhavO5" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="mailto:vaibhavpancholi05@proton.me"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-        </footer>
+            
+            <footer>
+                <p>&copy; 2022 &centerdot; Vaibhav Pancholi</p>
+                <div class="icons">
+                    <a href="https://telegram.me/VaibhavO5" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://twitter.com/VaibhavO5" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="mailto:vaibhavpancholi05@proton.me"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </footer>
+            
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@*/dist/locomotive-scroll.js"></script>
+    <script>
+        const scroller = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
+    </script>
     <script src="main.js"></script>
 </body>
 </html>

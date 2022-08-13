@@ -6,16 +6,14 @@
     --light-color: rgb(245,245,255);
     --dark-color: rgb(50,50,55);
     --transparent-color: rgba(255,255,255,0.8);
-    --border: 1px solid rgba(0,0,0,0.1);
 }
 
 .dark{
-    --primary-color: rgb(5,5,15);
+    --primary-color: rgb(0,0,10);
     --accent-color: rgb(155,200,255);
     --light-color: rgb(45,45,55);
     --dark-color: rgb(250,250,255);
     --transparent-color: rgba(0,0,0,0.2);
-    --border: 1px solid rgba(255,255,255,0.1);
 }
 
 *{
@@ -67,7 +65,6 @@ nav{
     padding: 2em; 
     background-color: var(--light-color);
     border-radius: 1em;
-    outline: var(--border);
     display: flex;
     align-items: center;
 
@@ -118,7 +115,6 @@ nav{
     color: var(--dark-color);
     background-color: var(--light-color);
     border-radius: 1em;
-    outline: var(--border);
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -137,7 +133,6 @@ nav{
             color: var(--dark-color);
             background-color: var(--transparent-color);
             border-radius: 1em;
-            outline: var(--border);
             display: flex;
             flex-direction: column;
             gap: 1em;
@@ -156,7 +151,6 @@ footer{
     color: var(--dark-color);
     background-color: var(--light-color);
     border-radius: 1em;
-    outline: var(--border);
     text-align: center;
     display: flex;
     flex-direction: column;
