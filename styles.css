@@ -1,18 +1,23 @@
 @import url("https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap");
+@import url("https://rsms.me/inter/inter.css");
 :root {
-  --primary-color: rgb(230,230,255);
-  --accent-color: rgb(55,155,255);
-  --light-color: rgb(245,245,255);
-  --dark-color: rgb(50,50,55);
-  --transparent-color: rgba(255,255,255,0.8);
+  --primary-color: rgb(240,240,240);
+  --accent-color: rgb(0,150,250);
+  --tint: #eeeeee;
+  --white: white;
+  --light-color: rgb(250,250,250);
+  --dark-color: rgb(25,25,25);
+  --border-color: var(--primary-color);
 }
 
 .dark {
-  --primary-color: rgb(2,2,4);
-  --accent-color: rgb(155,200,255);
-  --light-color: rgb(45,45,55);
-  --dark-color: rgb(250,250,255);
-  --transparent-color: rgba(0,0,0,0.2);
+  --primary-color: rgb(0,0,0);
+  --accent-color: rgb(0,150,250);
+  --tint: #212121;
+  --white: white;
+  --light-color: rgb(22,22,22);
+  --dark-color: rgb(250,250,250);
+  --border-color: var(--primary-color);
 }
 
 * {
@@ -23,13 +28,14 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  text-rendering: geometricPrecision;
+  font-family: "Inter", sans-serif;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.03rem;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
   transition: all 0.5s ease;
-  font-family: "General Sans", sans-serif;
   background-color: var(--primary-color);
   scroll-behavior: smooth;
 }
@@ -58,7 +64,7 @@ input[type=checkbox] {
 nav {
   padding: 2em;
   background-color: var(--light-color);
-  border-radius: 1em;
+  border-radius: 20px;
   display: flex;
   align-items: center;
 }
@@ -73,18 +79,17 @@ nav ul {
 }
 nav .logo {
   color: var(--accent-color);
-  letter-spacing: -1px;
+  letter-spacing: -0.05em;
   font-size: 2.2em;
-  font-weight: 900;
+  font-weight: 650;
 }
 nav .theme-toggle {
-  font-family: "General Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 550;
   font-size: 1em;
-  padding: 0.5em 1em;
-  color: var(--light-color);
-  background-color: var(--accent-color);
-  border-radius: 5em;
+  padding: 0.8em 1.5em;
+  color: var(--accent-color);
+  background-color: var(--tint);
+  border-radius: 15px;
   border: none;
   display: block;
   width: 100%;
@@ -100,29 +105,32 @@ nav .theme-toggle {
 }
 
 .box {
-  padding: 4em 2em;
+  padding: 2em;
   text-align: center;
   font-size: 1.2em;
   color: var(--dark-color);
   background-color: var(--light-color);
-  border-radius: 1em;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  overflow: hidden;
+  gap: 1em;
 }
 .box h2 {
   color: var(--dark-color);
 }
 .box .works-content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 .box .works-content .work-link {
+  overflow: hidden;
   padding: 2em;
   color: var(--dark-color);
-  background-color: var(--transparent-color);
-  border-radius: 1em;
+  border: 3px solid var(--tint);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -131,8 +139,8 @@ nav .theme-toggle {
   font-weight: 600;
 }
 .box .works-content .work-link:hover {
-  color: var(--light-color);
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+  background-color: var(--tint);
 }
 
 footer {
@@ -140,7 +148,7 @@ footer {
   padding: 2em;
   color: var(--dark-color);
   background-color: var(--light-color);
-  border-radius: 1em;
+  border-radius: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -150,13 +158,13 @@ footer {
 }
 footer .icons {
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
 }
 footer .fa-brands, footer .fa-solid {
-  color: var(--light-color);
+  color: var(--white);
   background-color: var(--accent-color);
   border-radius: 5em;
-  padding: 1em;
+  padding: 0.6em 1.3em;
   text-align: center;
   cursor: pointer;
 }
@@ -165,15 +173,15 @@ footer .fa-brands, footer .fa-solid {
   .wrapper, .work-link {
     padding: 1.5em;
   }
-  .box {
-    padding: 2em;
-  }
 }
 @media screen and (max-width: 480px) {
   body {
-    font-size: 0.88em;
+    font-size: 1em;
   }
   nav > ul {
     flex-direction: column;
+  }
+  .box {
+    padding: 1.6em;
   }
 }/*# sourceMappingURL=styles.css.map */
