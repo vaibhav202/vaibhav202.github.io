@@ -28,7 +28,7 @@
     user-select: none;
     font-family: 'Inter', sans-serif;
     text-rendering: optimizeLegibility;
-    letter-spacing: -0.03rem;
+    letter-spacing: -0.02rem;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -129,9 +129,9 @@ nav{
 
         .work-link{
             overflow: hidden;
-            padding: 2em;
+            padding: 1.5em 2em;
             color: var(--dark-color);
-            border: 3px solid var(--tint);
+            box-shadow: 0 0 0 0.15em var(--tint);
             border-radius: 15px;
             display: flex;
             flex-direction: column;
@@ -181,12 +181,12 @@ footer{
 
 @media screen and (max-width: 480px) {
     body{
-        font-size: 1em;
+        font-size: 0.9em;
     }
     nav > ul{
         flex-direction: column;
     }
     .box{
-        padding: 1.6em;
+        padding: 2em;
     }
 }
