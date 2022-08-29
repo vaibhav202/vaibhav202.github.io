@@ -1,22 +1,20 @@
-@import url("https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap");
-@import url("https://rsms.me/inter/inter.css");
 :root {
-  --primary-color: rgb(240,240,240);
-  --accent-color: rgb(0,150,250);
-  --tint: #eeeeee;
+  --primary-color: rgb(242,242,247);
+  --accent-color: rgb(0,122,255);
+  --tint: rgb(242,242,247);
   --white: white;
-  --light-color: rgb(250,250,250);
-  --dark-color: rgb(25,25,25);
+  --light-color: rgb(255,255,255);
+  --dark-color: rgb(28,28,30);
   --border-color: var(--primary-color);
 }
 
 .dark {
   --primary-color: rgb(0,0,0);
-  --accent-color: rgb(0,150,250);
-  --tint: #212121;
+  --accent-color: rgb(10,132,255);
+  --tint: rgb(44,44,46);
   --white: white;
-  --light-color: rgb(22,22,22);
-  --dark-color: rgb(250,250,250);
+  --light-color: rgb(28,28,30);
+  --dark-color: rgb(255,255,255);
   --border-color: var(--primary-color);
 }
 
@@ -28,14 +26,13 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-family: "Inter", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Inter, "Noto Sans", "Open Sans", "Helvetica Neue", sans-serif;
   text-rendering: optimizeLegibility;
   letter-spacing: -0.02rem;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  transition: all 0.5s ease;
   background-color: var(--primary-color);
   scroll-behavior: smooth;
 }
@@ -81,7 +78,7 @@ nav .logo {
   color: var(--accent-color);
   letter-spacing: -0.05em;
   font-size: 2.2em;
-  font-weight: 650;
+  font-weight: 700;
 }
 nav .theme-toggle {
   font-weight: 550;
@@ -129,11 +126,12 @@ nav .theme-toggle {
   overflow: hidden;
   padding: 1.5em 2em;
   color: var(--dark-color);
-  box-shadow: 0 0 0 0.15em var(--tint);
-  border-radius: 15px;
+  box-shadow: 0 0 0 2px var(--tint);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  transition: background-color 0.4s ease;
 }
 .box .works-content p {
   font-weight: 600;
@@ -171,7 +169,7 @@ footer .fa-brands, footer .fa-solid {
 
 @media screen and (max-width: 768px) {
   .wrapper, .work-link {
-    padding: 1.5em;
+    padding: 1em;
   }
 }
 @media screen and (max-width: 480px) {
