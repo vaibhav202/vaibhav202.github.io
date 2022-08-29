@@ -30,6 +30,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-family: Cantarell, sans-serif;
   text-rendering: optimizeLegibility;
   letter-spacing: -0.02rem;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
