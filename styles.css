@@ -169,7 +169,7 @@ footer .fa-brands, footer .fa-solid {
 
 @media screen and (max-width: 768px) {
   .wrapper, .work-link {
-    padding: 1em;
+    padding: 1.5em;
   }
 }
 @media screen and (max-width: 480px) {
