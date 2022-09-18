@@ -9,45 +9,44 @@
     <link rel="stylesheet" href="styles.css">
     <title>Vaibhav</title>
 </head>
-<body>
-    <div class="wrapper" data-scroll-container>
-            <nav data-scroll>
-                <ul>
-                    <li class="logo">Vaibhav&NonBreakingSpace;Pancholi</li>
-                    <li class="theme-switch">
-                        <button class="theme-toggle"><p class="theme-state">Switch to dark mode</p></button>
-                    </li>
-                </ul>
+<body class="wrapper" data-scroll-container>
+    <header data-scroll>
+        <nav>
+            <ul>
+                <li><h1 clas="logo">Vaibhav&NonBreakingSpace;Pancholi</h1></li>
+                <li class="theme-switch">
+                    <button class="theme-toggle"><p class="theme-state">Switch to dark mode</p></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main data-scroll class="boxes">
+        <section data-scroll class="box">
+            <h2>About me</h2>
+            <p>I am Vaibhav from Gujarat, India. Currently learning web designing and development.</p>
+            <p>In leisure time I like to create some simple wallpapers for Phone and Desktop.</p>
+        </section>
+        <section data-scroll class="box">
+            <h2>My works</h2>
+            <p class="about_work">Here is the links of some of my works, feel free to check them out!</p>
+            <nav>
+                <ul class="works-content">
+                    <li><a class="work-link" target="_blank" href="https://minisplash.netlify.app"><p class="work_para">miniSplash - Wallpapers from Unsplash</p>minisplash.netlify.app&NonBreakingSpace;&rightarrow;</a></li>
+                    <li><a class="work-link" target="_blank" href="https://photos.app.goo.gl/fB9uyh2HnNJrM9557"><p class="work_para">Some wallpapers by me. Created in Figma.</p>Check it on Google Photos&NonBreakingSpace;&rightarrow;</a></li>
+                    <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/Material-You"><p class="work_para">Presentation on Material You design system. Created in Figma.</p>Material You&NonBreakingSpace;&rightarrow;</a></li>
+                    <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/rv.co.nz"><p class="work_para">My first project but I am not working on it anymore.</p>rv.co.nz&NonBreakingSpace;&rightarrow;</a></li>
+                </ul>    
             </nav>
-            <div data-scroll class="boxes">
-                <div class="box">
-                    <h2>About me</h2>
-                    <p>I am Vaibhav from Gujarat, India. Currently learning web designing and development.</p>
-                    <p>In leisure time I like to create some simple wallpapers for Phone and Desktop.</p>
-                </div>
-                
-                <div class="box">
-                    <h2>My works</h2>
-                    <p class="about_work">Here is the links of some of my works, feel free to check them out!</p>
-                    <ul class="works-content">
-                        <li><a class="work-link" target="_blank" href="https://minisplash.netlify.app"><p class="work_para">miniSplash - Wallpapers from Unsplash</p>minisplash.netlify.app&NonBreakingSpace;&rightarrow;</a></li>
-                        <li><a class="work-link" target="_blank" href="https://photos.app.goo.gl/fB9uyh2HnNJrM9557"><p class="work_para">Some wallpapers by me. Created in Figma.</p>Check it on Google Photos&NonBreakingSpace;&rightarrow;</a></li>
-                        <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/Material-You"><p class="work_para">Presentation on Material You design system. Created in Figma.</p>Material You&NonBreakingSpace;&rightarrow;</a></li>
-                        <li><a class="work-link" target="_blank" href="https://vaibhavpancholi05.github.io/rv.co.nz"><p class="work_para">My first project but I am not working on it anymore.</p>rv.co.nz&NonBreakingSpace;&rightarrow;</a></li>
-                    </ul>    
-                </div>
-            </div>
-            
-            <footer data-scroll>
-                <p>&copy; 2022 &centerdot; Vaibhav Pancholi</p>
-                <div data-scroll class="icons">
-                    <a href="https://telegram.me/VaibhavO5" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://twitter.com/VaibhavO5" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="mailto:vaibhavpancholi05@proton.me"><i class="fa-solid fa-envelope"></i></a>
-                </div>
-            </footer>
-            
-    </div>
+        </section>
+    </main>
+    <footer data-scroll>
+        <p>&copy; 2022 &centerdot; Vaibhav Pancholi</p>
+        <div data-scroll class="icons">
+            <a href="https://telegram.me/VaibhavO5" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://twitter.com/VaibhavO5" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:vaibhavpancholi05@proton.me"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@*/dist/locomotive-scroll.js"></script>
     <script>
         const scroller = new LocomotiveScroll({
