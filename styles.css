@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap');
 :root {
   --body-color: rgb(240,240,240);
   --accent-color: rgb(10,10,10);
@@ -5,7 +6,7 @@
   --white: white;
   --light-color: rgb(250,250,250);
   --dark-color: rgb(30,30,30);
-  --transculent: rgba(0,0,0,0.05);
+  --transculent: rgba(0,0,0,0.2);
 }
 .dark {
   --body-color: rgb(0,0,0);
@@ -14,7 +15,7 @@
   --white: white;
   --light-color: rgb(30,30,30);
   --dark-color: rgb(250,250,250);
-  --transculent: rgba(255,255,255,0.05);
+  --transculent: rgba(255,255,255,0.2);
 }
 * {
   margin: 0;
@@ -24,7 +25,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-rendering: optimizeLegibility;
   letter-spacing: -0.02rem;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -79,12 +80,13 @@ nav ul {
 }
 .logo {
   color: var(--accent-color);
-  letter-spacing: -0.05em;
+  letter-spacing: -0.1em;
+  font-family: "Source Serif Pro";
   font-size: 2.2em;
-  font-weight: 700;
+  font-weight: 300;
 }
 nav .theme-toggle {
-  font-weight: 550;
+  font-weight: 500;
   font-size: 1em;
   padding: 0.8em 1.5em;
   color: var(--light-color);
@@ -117,6 +119,8 @@ section {
   gap: 1em;
 }
 section h2 {
+  font-family: "Source Serif Pro";
+  font-weight: 600;
   color: var(--dark-color);
 }
 section .works-content {
@@ -127,9 +131,11 @@ section .works-content {
 }
 section .works-content .link {
   overflow: hidden;
+  font-family: "Source Serif Pro";
+  font-weight: 300;
   padding: 1.5em 2em;
   color: var(--dark-color);
-  border: solid 2px var(--transculent);
+  border: dotted 2px var(--transculent);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -144,7 +150,8 @@ section .works-content .link:hover {
   background-color: var(--tint);
 }
 footer {
-  font-weight: 500;
+  font-family: "Source Serif Pro";
+  font-weight: 400;
   padding: 2em;
   color: var(--dark-color);
   background-color: var(--light-color);
