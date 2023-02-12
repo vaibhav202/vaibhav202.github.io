@@ -1,51 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-screen h-screen overflow-x-hidden p-6 sm:p-4 flex justify-center items-center flex-col select-none">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@*/dist/locomotive-scroll.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
     <title>Vaibhav</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><h1 class="logo">Vaibhav&NonBreakingSpace;Pancholi</h1></li>
+<body class="transition-all bg-neutral-200 dark:bg-black w-3/5 h-full sm:w-full overflow-y-auto flex justify-start items-center flex-col gap-4 rounded-3xl">
+    <header class="w-full">
+        <nav class="bg-white dark:bg-neutral-900 w-full p-8 rounded-3xl">
+            <ul class="w-full flex flex-wrap justify-between sm:justify-center sm:gap-6 items-center">
+                <li><h1 class="dark:text-white text-4xl -tracking-wider font-black">Vaibhav&NonBreakingSpace;Pancholi</h1></li>
                 <li class="theme-switch">
-                    <button class="theme-toggle"><p class="theme-state">Switch to dark mode</p></button>
+                    <button class="sm:w-full block theme-toggle bg-neutral-700 dark:bg-neutral-100 py-3 px-6 rounded-full"><p class="theme-state text-neutral-200 dark:text-neutral-800 font-medium">Switch to dark mode</p></button>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>About me</h2>
-            <p>I am Vaibhav from Gujarat, India. Currently learning web designing and development.</p>
-            <p>In leisure time I like to create some simple wallpapers for Phone and Desktop.</p>
+    <main class="w-full flex flex-col gap-4">
+        <section class="bg-white dark:bg-neutral-900 w-full p-8 rounded-3xl">
+            <h2 class="text-neutral-700 dark:text-neutral-300 font-bold -tracking-wide text-3xl mb-4">About me</h2>
+            <p class="text-black dark:text-white text-xl">I am Vaibhav from Gujarat, India. Currently learning web designing and development.</p>
+            <p class="text-black dark:text-white text-xl">In leisure time I like to create some simple wallpapers for Phone and Desktop.</p>
         </section>
-        <section>
-            <h2>My works</h2>
-            <p class="about_work">Here is the links of some of my works, feel free to check them out!</p>
-            <ul class="works-content">
-                <li><a class="link" target="_blank" href="https://minisplash.netlify.app"><p class="work_para">miniSplash - Wallpapers from Unsplash</p>minisplash.netlify.app&NonBreakingSpace;&rightarrow;</a></li>
-                <li><a class="link" target="_blank" href="https://vaibhav202.github.io/rv.co.nz"><p class="work_para">My first project but I am not working on it anymore.</p>rv.co.nz&NonBreakingSpace;&rightarrow;</a></li>
-                <li><a class="link" target="_blank" href="https://photos.app.goo.gl/fB9uyh2HnNJrM9557"><p class="work_para">Some wallpapers by me. Created in Figma.</p>Check it on Google Photos&NonBreakingSpace;&rightarrow;</a></li>
-                <li><a class="link" target="_blank" href="https://vaibhav202.github.io/Material-You"><p class="work_para">Presentation on Material You design system. Created in Figma.</p>Material You&NonBreakingSpace;&rightarrow;</a></li>
+        <section class="bg-white dark:bg-neutral-900 w-full p-8 rounded-3xl">
+            <h2 class="text-neutral-700 dark:text-neutral-300 font-bold -tracking-wide text-3xl mb-4">My works</h2>
+            <p class="text-neutral-500 dark:text-neutral-400 text-xl">Here is the links of some of my works, feel free to check them out!</p>
+            <ul class="flex flex-col gap-6 divide-y divide-neutral-200 dark:divide-neutral-800">
+                <li class="pt-6"><a class="text-neutral-500 dark:text-neutral-400 hover:text-teal-500 dark:hover:text-teal-300 block text-lg" target="_blank" href="https://minisplash.netlify.app"><p class="text-black dark:text-white font-semibold text-xl">miniSplash - Wallpapers from Unsplash</p>minisplash.netlify.app&NonBreakingSpace;&rightarrow;</a></li>
+                <li class="pt-6"><a class="text-neutral-500 dark:text-neutral-400 hover:text-blue-500 dark:hover:text-blue-300 block text-lg" target="_blank" href="https://vaibhav202.github.io/rv.co.nz"><p class="text-black dark:text-white font-semibold text-xl">My first project but I am not working on it anymore.</p>rv.co.nz&NonBreakingSpace;&rightarrow;</a></li>
+                <li class="pt-6"><a class="text-neutral-500 dark:text-neutral-400 hover:text-purple-500 dark:hover:text-purple-300 block text-lg" target="_blank" href="https://photos.app.goo.gl/fB9uyh2HnNJrM9557"><p class="text-black dark:text-white font-semibold text-xl">Some wallpapers by me. Created in Figma.</p>Check it on Google Photos&NonBreakingSpace;&rightarrow;</a></li>
+                <li class="pt-6"><a class="text-neutral-500 dark:text-neutral-400 hover:text-red-500 dark:hover:text-red-300 block text-lg" target="_blank" href="https://vaibhav202.github.io/Material-You"><p class="text-black dark:text-white font-semibold text-xl">Presentation on Material You design system. Created in Figma.</p>Material You&NonBreakingSpace;&rightarrow;</a></li>
             </ul>    
-            </nav>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2022 &centerdot; Vaibhav Pancholi</p>
-        <div class="icons">
-            <a href="https://telegram.me/VaibhavO5" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://twitter.com/VaibhavO5" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="mailto:vaibhavpancholi05@proton.me"><i class="fa-solid fa-envelope"></i></a>
+    <footer class="bg-white dark:bg-neutral-900 flex flex-wrap justify-between sm:justify-center items-center gap-6 w-full p-8 rounded-3xl">
+        <p class="dark:text-white font-medium">&copy; 2022 &centerdot; Created with tailwindcss</p>
+        <div class="flex gap-4 text-base">
+            <a href="https://telegram.me/VaibhavO5" target="_blank"><i class="fa-brands fa-telegram bg-neutral-700 dark:bg-neutral-100 text-neutral-200 dark:text-neutral-800 py-2 px-5 rounded-full"></i></a>
+            <a href="https://twitter.com/VaibhavO5" target="_blank"><i class="fa-brands fa-twitter bg-neutral-700 dark:bg-neutral-100 text-neutral-200 dark:text-neutral-800 py-2 px-5 rounded-full"></i></a>
+            <a href="mailto:vaibhavpancholi05@proton.me"><i class="fa-solid fa-envelope bg-neutral-700 dark:bg-neutral-100 text-neutral-200 dark:text-neutral-800 py-2 px-5 rounded-full"></i></a>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
