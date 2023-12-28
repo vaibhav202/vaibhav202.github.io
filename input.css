@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: InterVariable;
+    font-display: swap;
+    font-style: normal;
+    src: url("./fonts/InterVariable.woff2?v=4.0") format("woff2-variations"),
+         url("./fonts/InterVariable.woff2?v=4.0") format("woff2");
+    src: url("./fonts/InterVariable.woff2?v=4.0") format("woff2") tech("variations");
+}
+:root {
+    font-family: InterVariable, system-ui;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-variation-settings: 'opsz' 32;
+}
