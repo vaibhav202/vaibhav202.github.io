@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="w-full h-full overflow-x-hidden flex justify-start items-center flex-col select-none dark [&_*]:transition-all [&_*]:duration-300">
+<html lang="en"
+  class="w-full h-full overflow-x-hidden flex justify-start items-center flex-col select-none dark [&_*]:transition-all [&_*]:duration-300">
 
 <head>
   <meta charset="UTF-8" />
@@ -35,8 +36,8 @@
     </nav>
   </header>
   <main class="w-full flex flex-col">
-    <section
-      class="has-[p]:text-gray-800 has-[p]:dark:text-gray-200 has-[p]:text-lg has-[p]:break-keep bg-white dark:bg-gray-900 w-full p-6 flex flex-col gap-4">
+    <section class="bg-white dark:bg-gray-900 w-full p-6 flex flex-col gap-4
+      [&>p]:text-gray-800 [&>p]:dark:text-gray-200 [&>p]:text-lg [&>p]:break-keep">
       <h2 class="text-gray-700 dark:text-gray-300 font-bold -tracking-wide text-2xl">
         About me
       </h2>
@@ -56,32 +57,48 @@
       <p class="text-gray-500 dark:text-gray-400 text-lg">
         Here are the links to some of my works, feel free to check them out!
       </p>
-      <ul class="sm:grid-cols-2 grid grid-cols-1 gap-6
+      <ul
+        class="sm:grid-cols-2 grid grid-cols-1 gap-6
       [&>li]:flex [&>li]:h-full [&>li]:ring-2  [&>li]:ring-gray-200 [&>li]:dark:ring-gray-800 [&>li]:rounded-md [&>li]:overflow-clip
       [&>li>a]:flex [&>li>a]:flex-col [&>li>a]:justify-between [&>li>a]:items-end [&>li>a]:w-full [&>li>a]:h-full [&>li>a]:gap-8 [&>li>a]:p-4
       [&>li>a>p]:self-start [&>li>a>p]:text-gray-700 [&>li>a>p]:dark:text-gray-200 [&>li>a>p]:font-semibold [&>li>a>p]:text-xl">
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-cyan-600 dark:hover:text-cyan-200 group-hover:bg-cyan-50 dark:group-hover:bg-cyan-950"
-            target="_blank" href="https://tmdb-basic-api-reactjs.netlify.app">
-            <p class="group-hover:text-cyan-800 dark:group-hover:text-cyan-400">
+          <a class="text-gray-500 dark:text-gray-400
+           md:hover:text-cyan-600 md:dark:hover:text-cyan-200 
+           md:group-hover:bg-cyan-50 md:dark:group-hover:bg-cyan-950 
+           active:text-cyan-600 dark:active:text-cyan-200 
+           group-active:bg-cyan-50 dark:group-active:bg-cyan-950" target="_blank"
+            href="https://tmdb-basic-api-reactjs.netlify.app">
+            <p class="md:group-hover:text-cyan-800 md:dark:group-hover:text-cyan-400
+            group-active:text-cyan-800 dark:group-active:text-cyan-400">
               My first ReactJS project. Fetches data from TMDB API.
             </p>
             TMDB Basic API Usage&NonBreakingSpace;&rightarrow;
           </a>
         </li>
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-200 group-hover:bg-yellow-50 dark:group-hover:bg-yellow-950"
-            target="_blank" href="https://vaibhav202.github.io/sacred-games-ott-page/">
-            <p class="group-hover:text-yellow-800 dark:group-hover:text-yellow-400">
+          <a class="text-gray-500 dark:text-gray-400
+           md:hover:text-yellow-600 md:dark:hover:text-yellow-200 
+           md:group-hover:bg-yellow-50 md:dark:group-hover:bg-yellow-950
+           active:text-yellow-600 dark:active:text-yellow-200 
+           group-active:bg-yellow-50 dark:group-active:bg-yellow-950" target="_blank"
+            href="https://vaibhav202.github.io/sacred-games-ott-page/">
+            <p class="md:group-hover:text-yellow-800 md:dark:group-hover:text-yellow-400
+            group-active:text-yellow-800 dark:group-active:text-yellow-400">
               Sacred Games - A webseries' OTT page.
             </p>
             Sacred Games OTT Page&NonBreakingSpace;&rightarrow;
           </a>
         </li>
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-200 group-hover:bg-purple-50 dark:group-hover:bg-purple-950"
-            target="_blank" href="https://vaibhav202.github.io/sunnyside/">
-            <p class="group-hover:text-purple-800 dark:group-hover:text-purple-400">
+          <a class="text-gray-500 dark:text-gray-400
+           md:hover:text-purple-600 md:dark:hover:text-purple-200
+           md:group-hover:bg-purple-50 md:dark:group-hover:bg-purple-950
+           active:text-purple-600 dark:active:text-purple-200
+           group-active:bg-purple-50 dark:group-active:bg-purple-950" target="_blank"
+            href="https://vaibhav202.github.io/sunnyside/">
+            <p class="md:group-hover:text-purple-800 md:dark:group-hover:text-purple-400
+            group-active:text-purple-800 dark:group-active:text-purple-400">
               Sunnyside agency landing page - A solution to frontendmentor.io
               challenge
             </p>
@@ -89,18 +106,28 @@
           </a>
         </li>
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-200 group-hover:bg-red-50 dark:group-hover:bg-red-950"
-            target="_blank" href="https://vaibhav202.github.io/news-homepage/">
-            <p class="group-hover:text-red-800 dark:group-hover:text-red-400">
+          <a class="text-gray-500 dark:text-gray-400 
+          md:hover:text-red-600 md:dark:hover:text-red-200 
+          md:group-hover:bg-red-50 md:dark:group-hover:bg-red-950
+          active:text-red-600 dark:active:text-red-200 
+          group-active:bg-red-50 dark:group-active:bg-red-950" target="_blank"
+            href="https://vaibhav202.github.io/news-homepage/">
+            <p class="md:group-hover:text-red-800 md:dark:group-hover:text-red-400
+            group-active:text-red-800 dark:group-active:text-red-400">
               News homepage - A solution to frontendmentor.io challenge
             </p>
             News homepage&NonBreakingSpace;&rightarrow;
           </a>
         </li>
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-teal-600 dark:hover:text-teal-200 group-hover:bg-teal-50 dark:group-hover:bg-teal-950"
-            target="_blank" href="https://minisplash.netlify.app">
-            <p class="group-hover:text-teal-800 dark:group-hover:text-teal-400">
+          <a class="text-gray-500 dark:text-gray-400 
+          md:hover:text-teal-600 md:dark:hover:text-teal-200 
+          md:group-hover:bg-teal-50 md:dark:group-hover:bg-teal-950
+          active:text-teal-600 dark:active:text-teal-200 
+          group-active:bg-teal-50 dark:group-active:bg-teal-950" target="_blank" 
+          href="https://minisplash.netlify.app">
+            <p class="md:group-hover:text-teal-800 md:dark:group-hover:text-teal-400
+            group-active:text-teal-800 dark:group-active:text-teal-400">
               miniSplash - Wallpapers from Unsplash, inspired by
               <span class="italic">'pretty-pixels.netlify.app'</span>
             </p>
@@ -108,9 +135,14 @@
           </a>
         </li>
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-200 group-hover:bg-blue-50 dark:group-hover:bg-blue-950"
-            target="_blank" href="https://vaibhav202.github.io/rv.co.nz">
-            <p class="group-hover:text-blue-800 dark:group-hover:text-blue-400">
+          <a class="text-gray-500 dark:text-gray-400 
+          md:hover:text-blue-600 md:dark:hover:text-blue-200 
+          md:group-hover:bg-blue-50 md:dark:group-hover:bg-blue-950
+          active:text-blue-600 dark:active:text-blue-200 
+          group-active:bg-blue-50 dark:group-active:bg-blue-950" target="_blank"
+            href="https://vaibhav202.github.io/rv.co.nz">
+            <p class="md:group-hover:text-blue-800 md:dark:group-hover:text-blue-400
+            group-active:text-blue-800 dark:group-active:text-blue-400">
               My cousin had some idea for new startup so I was working for
               him. This site is now abandoned.
             </p>
@@ -118,9 +150,14 @@
           </a>
         </li>
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-violet-600 dark:hover:text-violet-200 group-hover:bg-violet-50 dark:group-hover:bg-violet-950"
+          <a class="text-gray-500 dark:text-gray-400 
+          md:hover:text-violet-600 md:dark:hover:text-violet-200 
+          md:group-hover:bg-violet-50 md:dark:group-hover:bg-violet-950
+          active:text-violet-600 dark:active:text-violet-200 
+          group-active:bg-violet-50 dark:group-active:bg-violet-950"
             target="_blank" href="https://photos.app.goo.gl/fB9uyh2HnNJrM9557">
-            <p class="group-hover:text-violet-800 dark:group-hover:text-violet-400">
+            <p class="md:group-hover:text-violet-800 md:dark:group-hover:text-violet-400
+            group-active:text-violet-800 dark:group-active:text-violet-400">
               Although I am not a graphic designer, I have tried creating some
               wallpapers for Phone and Desktop in Figma.
             </p>
@@ -128,9 +165,14 @@
           </a>
         </li>
         <li class="group">
-          <a class="text-gray-500 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-200 group-hover:bg-pink-50 dark:group-hover:bg-pink-950"
+          <a class="text-gray-500 dark:text-gray-400 
+          md:hover:text-pink-600 md:dark:hover:text-pink-200 
+          md:group-hover:bg-pink-50 md:dark:group-hover:bg-pink-950
+          active:text-pink-600 dark:active:text-pink-200 
+          group-active:bg-pink-50 dark:group-active:bg-pink-950"
             target="_blank" href="https://vaibhav202.github.io/Material-You-Presentation">
-            <p class="group-hover:text-pink-800 dark:group-hover:text-pink-400">
+            <p class="md:group-hover:text-pink-800 md:dark:group-hover:text-pink-400
+            group-active:text-pink-800 dark:group-active:text-pink-400">
               Presentation on Material You design system. Created in Figma.
             </p>
             Material You&NonBreakingSpace;&rightarrow;
@@ -144,13 +186,14 @@
     <p class="text-gray-600 dark:text-gray-400 font-medium">
       &copy; 2025 &centerdot; Designed with TailwindCSS
     </p>
-    <div class="flex gap-4 text-lg">
+    <div class="flex gap-4 text-lg
+    [&>a>i]:bg-gradient-to-br [&>a>i]:from-gray-600 [&>a>i]:to-gray-900 [&>a>i]:shadow-md [&>a>i]:shadow-black/20 [&>a>i]:dark:bg-gradient-to-br [&>a>i]:dark:from-gray-100 [&>a>i]:dark:to-gray-400 [&>a>i]:dark:shadow-white/20 [&>a>i]:text-gray-200 [&>a>i]:dark:text-gray-800 [&>a>i]:hover:shadow-none [&>a>i]:transition-shadow [&>a>i]:duration-300 [&>a>i]:py-2 [&>a>i]:px-5 [&>a>i]:rounded-full">
       <a href="https://telegram.me/VaibhavO5" target="_blank"><i
-          class="fa-brands fa-telegram bg-gradient-to-br from-gray-600 to-gray-900 shadow-md shadow-black/20 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-400 dark:shadow-white/20 text-gray-200 dark:text-gray-800 hover:shadow-none transition-shadow duration-300 py-2 px-5 rounded-full"></i></a>
+          class="fa-brands fa-telegram"></i></a>
       <a href="https://x.com/VaibhavO5" target="_blank"><i
-          class="fa-brands fa-x-twitter bg-gradient-to-br from-gray-600 to-gray-900 shadow-md shadow-black/20 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-400 dark:shadow-white/20 text-gray-200 dark:text-gray-800 hover:shadow-none transition-shadow duration-300 py-2 px-5 rounded-full"></i></a>
+          class="fa-brands fa-x-twitter"></i></a>
       <a href="mailto:vaibhavpancholi05@proton.me"><i
-          class="fa-solid fa-envelope bg-gradient-to-br from-gray-600 to-gray-900 shadow-md shadow-black/20 dark:bg-gradient-to-br dark:from-gray-100 dark:to-gray-400 dark:shadow-white/20 text-gray-200 dark:text-gray-800 hover:shadow-none transition-shadow duration-300 py-2 px-5 rounded-full"></i></a>
+          class="fa-solid fa-envelope"></i></a>
     </div>
   </footer>
 </body>
